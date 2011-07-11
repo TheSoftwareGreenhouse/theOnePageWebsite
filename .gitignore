@@ -1,0 +1,7 @@
+*~
+.* # Ignore all dotfiles
+
+!.gitignore # except for .gitignore
+
+*~ # ignore emacs backup files
+
