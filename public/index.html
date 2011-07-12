@@ -22,9 +22,9 @@
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-
   <!-- CSS: implied media="all" -->
   <link rel="stylesheet" href="css/style.css?v=2">
+  <link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.8.14.custom.css">
 
   <!-- Uncomment if you are specifically targeting less enabled mobile browsers
   <link rel="stylesheet" media="handheld" href="css/handheld.css?v=2">  -->
@@ -45,7 +45,7 @@
       <img href="/img/logo.png" />
     </header>
     <div id="main" role="main">
-       <nav>
+       <nav id="tabs">
          <ul>
            <li><a href="#home">Home</a></li>
            <li><a href="#aboutUs">About Us</a></li>
@@ -54,14 +54,13 @@
            <li><a href="#testimonials">Testimonials</a></li>
            <li><a href="#contactUs">Contact Us</a></li>
          </ul>
-       </nav>
-       <article id="#home">
+       <article id="home">
          <header>
            <h1>Welcome to the company</h1>
          </header>
          <p>This is a summary of what we do.</p>
        </article>
-       <article id="#aboutUs">
+       <article id="aboutUs">
          <header>
            <h1>More about the company</h1>
          </header>
@@ -94,6 +93,7 @@
          <p>Email</p>
          <p>Fax</p>
        </article>
+       </nav>
     </div>
     <footer>
       <h1>Company name</h1>
@@ -111,6 +111,7 @@
 
 
   <!-- scripts concatenated and minified via ant build script-->
+  <script src="js/libs/jquery-ui-1.8.14.custom.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/script.js"></script>
   <!-- end scripts-->
@@ -122,11 +123,18 @@
   <![endif]-->
 
   <!-- mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID -->
+  <!--
   <script>
     var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]];
     (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
     g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
     s.parentNode.insertBefore(g,s)}(document,"script"));
+  </script>
+  -->
+  <script>
+    $(function () {
+      $('#tabs').tabs();
+    });
   </script>
 
 </body>
