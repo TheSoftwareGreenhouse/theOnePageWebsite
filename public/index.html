@@ -24,7 +24,7 @@
 
   <!-- CSS: implied media="all" -->
   <link rel="stylesheet" href="css/style.css?v=2">
-  <link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.8.14.custom.css">
+  <link rel="stylesheet" href="css/custom-theme/jquery-ui-1.8.14.custom.css">
 
   <!-- Uncomment if you are specifically targeting less enabled mobile browsers
   <link rel="stylesheet" media="handheld" href="css/handheld.css?v=2">  -->
@@ -45,7 +45,7 @@
       <img href="/img/logo.png" />
     </header>
     <div id="main" role="main">
-       <nav id="tabs">
+       <nav>
          <ul>
            <li><a href="#home">Home</a></li>
            <li><a href="#aboutUs">About Us</a></li>
@@ -54,6 +54,7 @@
            <li><a href="#testimonials">Testimonials</a></li>
            <li><a href="#contactUs">Contact Us</a></li>
          </ul>
+       </nav>
        <article id="home">
          <header>
            <h1>Welcome to the company</h1>
@@ -93,11 +94,10 @@
          <p>Email</p>
          <p>Fax</p>
        </article>
-       </nav>
     </div>
     <footer>
       <h1>Company name</h1>
-      <p>Address</p>
+      <p>Address Line 1 | Address Line 2 | City | County | Postcode</p>
       <p>Copyright &#169; 2011 Company Name. All Rights Reserved. <a href="http://www.bigbluestar.co.uk" target="_blank">Website design by Big blue Star.</a></p>
     </footer>
   </div> <!--! end of #container -->
@@ -133,7 +133,7 @@
   -->
   <script>
     $(function () {
-      $('#tabs').tabs();
+      $('#main').tabs();
     });
   </script>
 
